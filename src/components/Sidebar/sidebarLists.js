@@ -60,9 +60,4 @@ export const sideBarList = [
     iconClass: "bi bi-regex",
     route: "/regex-formatter",
   },
-  {
-    name: "PSQL Formatter",
-    iconClass: "bi bi-filetype-sql",
-    route: "/psql-formatter",
-  },
 ];

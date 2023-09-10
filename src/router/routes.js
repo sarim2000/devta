@@ -10,7 +10,6 @@ import JSONToYAML from "../pages/JSONConverter/index.vue";
 import JWTDebugger from "../pages/JWTDebugger/index.vue";
 import SQLFormatter from "../pages/SQLFormatter/index.vue";
 import RegexPattern from "../pages/RegexPattern/index.vue"
-import PSQLFormatter from "../pages/PSQLParser/index.vue"
 import Index from "../pages/Index/index.vue";
 
 const routes = [
@@ -73,11 +72,6 @@ const routes = [
     path: "/regex-formatter",
     component: RegexPattern,
     name: "regex Formatter",
-  },
-  {
-    path: "/psql-formatter",
-    component: PSQLFormatter,
-    name: "psql Formatter",
   },
   // {
   //   path: "/:slug",
