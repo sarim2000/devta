@@ -72,7 +72,7 @@ const handleClick = (value) => {
             <div class="block card block1">
                 <div class="inner_block">
                     <div class="p-2">
-                        <div class="form-floating">
+                        <div class="form-floating h-100">
                             <input v-model="regexPattern" @input="handleChange" spellcheck="false" autofocus type="text"
                                 :class="error ? 'form-control mono-font is-invalid' : 'form-control mono-font'"
                                 placeholder="Enter Regular Expression" />
@@ -83,8 +83,8 @@ const handleClick = (value) => {
                         <div class="mt-2">
                             <div class="form-floating inpcard">
                                 <textarea v-model="testString" spellcheck="false" type="text"
-                                    :class="error ? 'form-control mono-font is-invalid' : 'form-control mono-font'"
-                                    class="h-100" id="testInput" placeholder="Enter Test String"></textarea>
+                                    :class="error ? 'form-control mono-font is-invalid h-75' : 'form-control mono-font h-75'"
+                                    id="testInput" placeholder="Enter Test String"></textarea>
                                 <label for="testInput">Enter Test String</label>
                             </div>
                         </div>
@@ -122,3 +122,8 @@ const handleClick = (value) => {
     </main>
 </template>
 
+<style>
+.inpcard{
+    height: 100vh
+}
+</style>
