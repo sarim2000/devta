@@ -122,8 +122,3 @@ const handleClick = (value) => {
     </main>
 </template>
 
-<style>
-.inpcard {
-    height: 73vh;
-}
-</style>
