@@ -68,6 +68,6 @@ export const sideBarList = [
   {
     name: "Regex Formatter",
     iconClass: "bi bi-regex",
-    route: "/regex-formatter",
+    route: "/regex-tester",
   },
 ];

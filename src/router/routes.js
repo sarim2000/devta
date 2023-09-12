@@ -9,6 +9,8 @@ import TimeZoneConverter from "../pages/TimeZoneConverter/index.vue";
 import JSONToYAML from "../pages/JSONConverter/index.vue";
 import JWTDebugger from "../pages/JWTDebugger/index.vue";
 import SQLFormatter from "../pages/SQLFormatter/index.vue";
+import PSQLFormatter from "../pages/PSQLParser/index.vue"
+import RegexTester from "../pages/RegexTester/index.vue"
 import Index from "../pages/Index/index.vue";
 import URLParser from "../pages/URLParser/index.vue";
 
@@ -74,6 +76,20 @@ const routes = [
     component: URLParser,
     name: "URL Parser",
   },
+  {
+    path: "/regex-tester",
+    component: RegexTester,
+    name: "Regex Tester",
+  },
+  {
+    path: "/postgres-parser",
+    component: PSQLFormatter,
+    name: "Postgres URL Parser",
+  },
+  // {
+  //   path: "/:slug",
+  //   component: Module,
+  // },
   {
     path: "/:path",
     redirect: { name: "Home" },

@@ -230,4 +230,3 @@ const copySpecificContent = (type) => {
         </div>
     </main>
 </template>
-
