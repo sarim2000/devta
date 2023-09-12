@@ -9,8 +9,9 @@ import TimeZoneConverter from "../pages/TimeZoneConverter/index.vue";
 import JSONToYAML from "../pages/JSONConverter/index.vue";
 import JWTDebugger from "../pages/JWTDebugger/index.vue";
 import SQLFormatter from "../pages/SQLFormatter/index.vue";
-import RegexPattern from "../pages/RegexPattern/index.vue"
 import Index from "../pages/Index/index.vue";
+import URLParser from "../pages/URLParser/index.vue";
+
 
 const routes = [
   {
@@ -69,14 +70,10 @@ const routes = [
     name: "SQL Formatter",
   },
   {
-    path: "/regex-formatter",
-    component: RegexPattern,
-    name: "regex Formatter",
+    path: "/url-parser",
+    component: URLParser,
+    name: "URL Parser",
   },
-  // {
-  //   path: "/:slug",
-  //   component: Module,
-  // },
   {
     path: "/:path",
     redirect: { name: "Home" },
