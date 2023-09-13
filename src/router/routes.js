@@ -82,7 +82,7 @@ const routes = [
     name: "Regex Tester",
   },
   {
-    path: "/postgres-parser",
+    path: "/postgresql-url-parser",
     component: PSQLFormatter,
     name: "Postgres URL Parser",
   },
